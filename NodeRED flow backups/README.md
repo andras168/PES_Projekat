@@ -1,0 +1,1 @@
+Here are the NodeRED flow backups located. You can import them in your NodeRED flow by clicking on hamburger menu (located in right upper corner), click on import and then "select file to import". Choose a valid <flow_name>.json file.
