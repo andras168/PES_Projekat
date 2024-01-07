@@ -1,0 +1,988 @@
+[
+    {
+        "id": "2100e50ef90c2da2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "20b2a91db99cadc6",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "192.168.1.125",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "96e2048744909a4a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "fa-bolt",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "daa37cf287bca672",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#6acad8",
+                "baseFont": "Verdana,Verdana,Geneva,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#6acad8",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#6acad8",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#6acad8",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#1b1e23",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#251e23",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#6acad8",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#1b1e23",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#1b1e23",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#6acad8",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#6acad8",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#1b1e23",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "DC Motor Power Meter",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "icon",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "42e29a67d47cf21b",
+        "type": "ui_group",
+        "name": "INA219",
+        "tab": "96e2048744909a4a",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27b9a7dc33a6bacd",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "fa-area-chart",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9ce0356cc04635a1",
+        "type": "ui_group",
+        "name": "Chart group",
+        "tab": "27b9a7dc33a6bacd",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9a87596d4fa598c7",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8bbbde453ce033ec",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a195f8f4b9b95ac2",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3c08079a1cb6fa55",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "02cb922b87617b13",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3d5e68acf8a1bd7a",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "54cc903f8327ad3d",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46050eed94f959ab",
+        "type": "ui_spacer",
+        "z": "2100e50ef90c2da2",
+        "name": "spacer",
+        "group": "42e29a67d47cf21b",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "770111ade424abc3",
+        "type": "mqtt in",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Voltage",
+        "topic": "ina_voltage",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20b2a91db99cadc6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "88262712af213610",
+                "c485085792d040c8"
+            ]
+        ]
+    },
+    {
+        "id": "8586b3c9efefc85f",
+        "type": "mqtt in",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Current",
+        "topic": "ina_current",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20b2a91db99cadc6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "d1f02bb9e9a22a81"
+            ]
+        ]
+    },
+    {
+        "id": "e94e295b579502e3",
+        "type": "mqtt in",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Power",
+        "topic": "ina_power",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20b2a91db99cadc6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "805cee4d360fe919",
+                "7c838815f0b4a35c"
+            ]
+        ]
+    },
+    {
+        "id": "cb1feb4a9006074a",
+        "type": "ui_artlessgauge",
+        "z": "2100e50ef90c2da2",
+        "group": "42e29a67d47cf21b",
+        "order": 4,
+        "width": 4,
+        "height": 4,
+        "name": "Power",
+        "icon": "",
+        "label": "Power",
+        "unit": "W",
+        "layout": "radial",
+        "decimals": "2",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#c594ed",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 2,
+                "col": "#b65bec",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 4,
+                "col": "#9241c7",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 6,
+                "col": "#9241c7",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 570,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b4faab5891a41f26",
+        "type": "ui_artlessgauge",
+        "z": "2100e50ef90c2da2",
+        "group": "42e29a67d47cf21b",
+        "order": 3,
+        "width": 4,
+        "height": 4,
+        "name": "Current",
+        "icon": "",
+        "label": "Current",
+        "unit": "A",
+        "layout": "radial",
+        "decimals": "2",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#8e9ff2",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 1,
+                "col": "#5b7cec",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 2,
+                "col": "#2b55c6",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 3,
+                "col": "#2b55c6",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 480,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c485085792d040c8",
+        "type": "ui_artlessgauge",
+        "z": "2100e50ef90c2da2",
+        "group": "42e29a67d47cf21b",
+        "order": 2,
+        "width": 4,
+        "height": 4,
+        "name": "Voltage",
+        "icon": "",
+        "label": "Voltage",
+        "unit": "V",
+        "layout": "radial",
+        "decimals": "2",
+        "differential": false,
+        "minmax": true,
+        "colorTrack": "#555555",
+        "style": "",
+        "colorFromTheme": true,
+        "property": "payload",
+        "secondary": "secondary",
+        "inline": false,
+        "animate": true,
+        "sectors": [
+            {
+                "val": 0,
+                "col": "#ff8282",
+                "t": "min",
+                "dot": 0
+            },
+            {
+                "val": 2,
+                "col": "#eb5252",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 4,
+                "col": "#e2280e",
+                "t": "sec",
+                "dot": 0
+            },
+            {
+                "val": 12,
+                "col": "#e2280e",
+                "t": "max",
+                "dot": 0
+            }
+        ],
+        "lineWidth": "7",
+        "bgcolorFromTheme": true,
+        "diffCenter": "",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fb6e6dfeb1c17c09",
+        "type": "ui_template",
+        "z": "2100e50ef90c2da2",
+        "group": "42e29a67d47cf21b",
+        "name": "CSS",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n        body {\n                background-image: url(\"https://i.imgur.com/maV5hBr.jpg\");\n                background-size: cover;\n                /* Adjust as needed */\n                background-repeat: repeat;\n\n\n        }\n\n        md-card.nr-dashboard-template:nth-child(1) {\n                background-opacity: .5;\n        }\n\n        md-card.nr-dashboard-button:nth-child(8) > button:nth-child(1) {\n                border-radius: 20px;\n                font-size: 26px;\n                background: #4caf50;\n                font-color: #ffffff;\n                text-align: center;\n                line-height: 1;\n        }\n\n        md-card.nr-dashboard-button:nth-child(9) > button:nth-child(1) {\n                border-radius: 20px;\n                font-size: 26px;\n                background: #ff453e;\n                font-color: #ffffff;\n                text-align: center;\n                line-height: 1;\n        }\n\n        md-card.nr-dashboard-button:nth-child(11) > button:nth-child(1) {\n                border-radius: 20px;\n                font-size: 26px;\n                font-color: #ffffff;\n                text-align: center;\n                line-height: 1;                \n        }\n\n        md-card.nr-dashboard-button:nth-child(12) > button:nth-child(1) {\n                border-radius: 20px;\n                font-size: 26px;\n                font-color: #ffffff;\n                text-align: center;\n                line-height: 1;\n        }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 110,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "icon": "font-awesome/fa-cube"
+    },
+    {
+        "id": "88262712af213610",
+        "type": "ui_chart",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "group": "9ce0356cc04635a1",
+        "order": 1,
+        "width": 20,
+        "height": 6,
+        "label": "Voltage",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "8",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#ff1515",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 480,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "612c0dde139cf670",
+        "type": "ui_chart",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "group": "9ce0356cc04635a1",
+        "order": 2,
+        "width": 20,
+        "height": 6,
+        "label": "Current",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "8",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c6aa0cf6391e855",
+        "type": "ui_chart",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "group": "9ce0356cc04635a1",
+        "order": 3,
+        "width": 20,
+        "height": 6,
+        "label": "Power",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "20",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#a66dc5",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac330903561165c6",
+        "type": "ui_slider",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "label": "Duty cycle",
+        "tooltip": "Move the slider for changing the DC motor duty cycle.",
+        "group": "42e29a67d47cf21b",
+        "order": 6,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "df87b76a176c7fdd"
+            ]
+        ]
+    },
+    {
+        "id": "505016a1a678c14d",
+        "type": "mqtt out",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT PWM",
+        "topic": "pwm_control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20b2a91db99cadc6",
+        "x": 550,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1454a8ae81a8b70d",
+        "type": "ui_button",
+        "z": "2100e50ef90c2da2",
+        "name": "Start motor",
+        "group": "42e29a67d47cf21b",
+        "order": 9,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "#333333",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-play",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 220,
+        "wires": [
+            [
+                "cd5294b0058bb76f"
+            ]
+        ]
+    },
+    {
+        "id": "b1e38c617a97087b",
+        "type": "ui_button",
+        "z": "2100e50ef90c2da2",
+        "name": "Stop motor",
+        "group": "42e29a67d47cf21b",
+        "order": 10,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "#333333",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-square",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "c4f875dd8c52f373"
+            ]
+        ]
+    },
+    {
+        "id": "c4f875dd8c52f373",
+        "type": "mqtt out",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Start",
+        "topic": "stop_motor",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20b2a91db99cadc6",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cd5294b0058bb76f",
+        "type": "mqtt out",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Stop",
+        "topic": "start_motor",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20b2a91db99cadc6",
+        "x": 1030,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fbb784ddef1f515d",
+        "type": "ui_button",
+        "z": "2100e50ef90c2da2",
+        "name": "Forward",
+        "group": "42e29a67d47cf21b",
+        "order": 12,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "#333333",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-rotate-right",
+        "payload": "forward",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "2a9ab5ac54b20f47"
+            ]
+        ]
+    },
+    {
+        "id": "979ca72e36b5f5b7",
+        "type": "ui_button",
+        "z": "2100e50ef90c2da2",
+        "name": "Backward",
+        "group": "42e29a67d47cf21b",
+        "order": 13,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "#333333",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-rotate-left",
+        "payload": "backward",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "57d5205a6fad4ed8"
+            ]
+        ]
+    },
+    {
+        "id": "2a9ab5ac54b20f47",
+        "type": "mqtt out",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Forward",
+        "topic": "motor_forward",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20b2a91db99cadc6",
+        "x": 940,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "57d5205a6fad4ed8",
+        "type": "mqtt out",
+        "z": "2100e50ef90c2da2",
+        "name": "MQTT Backward",
+        "topic": "motor_backward",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20b2a91db99cadc6",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "805cee4d360fe919",
+        "type": "debug",
+        "z": "2100e50ef90c2da2",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "df87b76a176c7fdd",
+        "type": "range",
+        "z": "2100e50ef90c2da2",
+        "minin": "0",
+        "maxin": "100",
+        "minout": "0",
+        "maxout": "45",
+        "action": "roll",
+        "round": true,
+        "property": "payload",
+        "name": "Duty cycle scaling",
+        "x": 350,
+        "y": 580,
+        "wires": [
+            [
+                "505016a1a678c14d"
+            ]
+        ]
+    },
+    {
+        "id": "7c838815f0b4a35c",
+        "type": "smooth",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "10",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "cb1feb4a9006074a",
+                "7053dbd23445011f",
+                "9c6aa0cf6391e855"
+            ]
+        ]
+    },
+    {
+        "id": "d50d235b89542866",
+        "type": "rpi-gpio out",
+        "z": "2100e50ef90c2da2",
+        "name": "Alarm",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "1000",
+        "out": "pwm",
+        "bcm": true,
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7053dbd23445011f",
+        "type": "function",
+        "z": "2100e50ef90c2da2",
+        "name": "Power >= 3",
+        "func": "if (msg.payload > 3) {\n  msg.payload = 1\n} else {\n  msg.payload = 0;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "d50d235b89542866"
+            ]
+        ]
+    },
+    {
+        "id": "d1f02bb9e9a22a81",
+        "type": "smooth",
+        "z": "2100e50ef90c2da2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "10",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "b4faab5891a41f26",
+                "612c0dde139cf670"
+            ]
+        ]
+    }
+]
