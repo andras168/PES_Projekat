@@ -7,4 +7,4 @@ Merenje potrošnje DC motora pomoću INA219 senzora. DC motor se kontroliše pom
 
 ### Povezivanje
 
-<img src="https://github.com/andras168/PES_Projekat/blob/main/Povezivanje_Raspberry.jpg?raw=true" align="center" width="600">
+<img src="https://github.com/andras168/PES_Projekat/blob/main/Povezivanje_Raspberry.jpg?raw=true" align="center" width="1000">
