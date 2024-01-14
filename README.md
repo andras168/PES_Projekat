@@ -14,7 +14,7 @@ Merenje potrošnje DC motora pomoću INA219 senzora. DC motor se kontroliše pom
 
 ## Potrebne modifikacije
 
-Potrebno je bar jedan keramički kondenzator zalemiti u paraleli sa priključcima dc motora, da bismo eliminisali elektromagnetske smetnje motora.
+Potrebno je bar jedan keramički kondenzator od 0.1uF zalemiti paralelno sa priključcima DC motora. Tako možemo eliminisati elektromagnetske smetnje DC motora u nekoj meri.
 
 Više o tome na [ovom](http://www.stefanv.com/rcstuff/qf200005.html) linku.
 
