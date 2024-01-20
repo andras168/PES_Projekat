@@ -1,11 +1,20 @@
 # Projekat iz predmeta Projektovanje elektronskih sistema
 Merenje potrošnje DC motora pomoću INA219 senzora. DC motor se kontroliše pomoću L298N H-mosta.
 
-## Datasheet-ovi
+## Sadržaj
+ - [Datasheet-ovi](#datasheet-ovi)
+ - [Poslednja dobra verzija](#poslednja-dobra-verzija)
+ - [Povezivanje](#povezivanje)
+ - [Potrebne modifikacije](#potrebne-modifikacije)
+ - [NodeRed flow](#nodered-flow)
+ - [NodeRed dashboard](#nodered-dashboard)
+ - [Dodatni pomoćni linkovi](#dodatni-pomocni-linkovi)
+
+### Datasheet-ovi
 - [L298 Datasheet](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)
 - [INA219 Datasheet](https://www.ti.com/lit/ds/symlink/ina219.pdf?ts=1703659644578&ref_url=https%253A%252F%252Fwww.google.com%252F)
 
-## Poslednja dobra verzija
+### Poslednja dobra verzija
 [Ovde](https://github.com/andras168/PES_Projekat/blob/main/projekat_l298_ina219_thingspeak_v4.py)
 
 ## Povezivanje
