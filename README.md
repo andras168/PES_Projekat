@@ -8,7 +8,7 @@ Merenje potrošnje DC motora pomoću INA219 senzora. DC motor se kontroliše pom
  - [Potrebne modifikacije](#potrebne-modifikacije)
  - [NodeRed flow](#nodered-flow)
  - [NodeRed dashboard](#nodered-dashboard)
- - [Dodatni pomoćni linkovi](#dodatni-pomocni-linkovi)
+ - [Dodatni pomoćni linkovi](#dodatni-pomoćni-linkovi)
 
 ## Datasheet-ovi
 - [L298 Datasheet](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)
