@@ -1,8 +1,8 @@
 # Projekat iz predmeta Projektovanje elektronskih sistema
- Projekat ima kao osnovni cilj da iskoristi potencijal Raspberry Pi 4 mini računara, Node- RED i Thingspeak platforme u merenju potrošnje elektromotora jednosmerne struje. Integracija ove
+&nbsp;&nbsp;&nbsp;&nbsp; Projekat ima kao osnovni cilj da iskoristi potencijal Raspberry Pi 4 mini računara, Node- RED i Thingspeak platforme u merenju potrošnje elektromotora jednosmerne struje. Integracija ove
 kombinacije tehnologija omogućava efikasno praćenje i analizu energetske efikasnosti
-elektromotora u raznim aplikacijama.
- Raspberry Pi 4 mini računar, kao glavna komponenta projekta, pruža mogućnost integracije
+elektromotora u raznim aplikacijama.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Raspberry Pi 4 mini računar, kao glavna komponenta projekta, pruža mogućnost integracije
 različitih senzora i pokretačkih kola. Ključni elementi sistema uključuju INA219 senzore za merenje
 struje i napona potrošača, omogućavajući precizno i kontinuirano praćenje potrošnje energije
 elektromotora. Pored toga, L298N drajver se koristi za kontrolu elektromotora - kontrolu smera
