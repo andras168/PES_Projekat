@@ -1,6 +1,6 @@
 # Projekat iz predmeta Projektovanje elektronskih sistema
 <div align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Projekat ima kao osnovni cilj da iskoristi potencijal Raspberry Pi 4 mini računara, NodeRED i Thingspeak platforme u merenju potrošnje elektromotora jednosmerne struje. Integracija ove kombinacije tehnologija omogućava efikasno praćenje i analizu energetske efikasnosti elektromotora u raznim aplikacijama.</div>
-<div align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Raspberry Pi 4 mini računar, kao glavna komponenta projekta, pruža mogućnost integracije različitih senzora i pokretačkih kola. Ključni elementi sistema uključuju INA219 senzore za merenje struje i napona potrošača, omogućavajući precizno i kontinuirano praćenje potrošnje energije elektromotora. Pored toga, L298N drajver se koristi za kontrolu elektromotora - kontrolu smera okretanja i prilagođavanje brzine rada. Node-RED i Thingspeak platforma se koristi za jednostavnu implementaciju logike upravljanja i vizualizaciju podataka.</div>
+<div align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Raspberry Pi 4 mini računar, kao glavna komponenta projekta, pruža mogućnost integracije različitih senzora i pokretačkih kola. Ključni elementi sistema uključuju INA219 senzor za merenje struje i napona potrošača, omogućavajući precizno i kontinuirano praćenje potrošnje energije elektromotora. Pored toga, L298N drajver se koristi za kontrolu elektromotora - kontrolu smera okretanja i prilagođavanje brzine rada. Node-RED i Thingspeak platforma se koristi za jednostavnu implementaciju logike upravljanja i vizualizaciju podataka.</div>
  
 ## Sadržaj
  - [Datasheet-ovi](#datasheet-ovi)
@@ -24,7 +24,7 @@
 
 ## Potrebne modifikacije
 
-Potrebno je bar jedan keramički kondenzator od 0.1uF zalemiti paralelno sa priključcima DC motora. Tako možemo eliminisati elektromagnetske smetnje DC motora u nekoj meri.
+Potrebno je bar jedan blok kondenzator od 0.1uF zalemiti paralelno sa priključcima DC motora. Tako možemo eliminisati elektromagnetske smetnje DC motora u nekoj meri.
 
 Više o tome na [ovom](http://www.stefanv.com/rcstuff/qf200005.html) linku.
 
