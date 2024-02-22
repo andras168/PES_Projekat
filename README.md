@@ -36,7 +36,8 @@ Više o tome na [ovom](http://www.stefanv.com/rcstuff/qf200005.html) linku.
 
 <img src="https://github.com/andras168/PES_Projekat/blob/main/Slike/Screenshot_20240114_125452.png?raw=true" align="center" width="1000">
 
-## Dodatni pomoćni linkovi
+## Korisni linkovi
+- [NodeRed Documentation](https://nodered.org/docs/)
 - [Raspberry Pi INA219 Tutorial ](https://www.rototron.info/raspberry-pi-ina219-tutorial/)
 - [Raspberry Pi L298N Interface Tutorial](https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/)
 - [Voltage spikes when driving DC motor with N-channel MOSFET](https://electronics.stackexchange.com/questions/143755/voltage-spikes-when-driving-dc-motor-with-n-channel-mosfet)
