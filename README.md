@@ -9,7 +9,7 @@
  - [Potrebne modifikacije](#potrebne-modifikacije)
  - [NodeRed flow](#nodered-flow)
  - [NodeRed dashboard](#nodered-dashboard)
- - [Dodatni pomoćni linkovi](#dodatni-pomoćni-linkovi)
+ - [Korisni linkovi](#korisni-linkovi)
 
 ## Datasheet-ovi
 - [L298 Datasheet](https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf)
