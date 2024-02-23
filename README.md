@@ -38,6 +38,7 @@ Više o tome na [ovom](http://www.stefanv.com/rcstuff/qf200005.html) linku.
 
 ## Demonstracioni video
 
+[![Demonstracioni video](https://img.youtube.com/vi/izJ1eI1YkAI/0.jpg)](https://www.youtube.com/watch?v=izJ1eI1YkAI)
 
 
 ## Korisni linkovi
