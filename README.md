@@ -38,7 +38,7 @@ Više o tome na [ovom](http://www.stefanv.com/rcstuff/qf200005.html) linku.
 
 ## Demonstracioni video
 
-[![Alternate Text]({image-url})]({[video-url](https://ody.sh/ZrnFecIuEL)} "Demonstracija projekta")
+https://ody.sh/ZrnFecIuEL
 
 ## Korisni linkovi
 - [NodeRed Documentation](https://nodered.org/docs/)
