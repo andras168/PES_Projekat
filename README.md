@@ -9,6 +9,7 @@
  - [Potrebne modifikacije](#potrebne-modifikacije)
  - [NodeRed flow](#nodered-flow)
  - [NodeRed dashboard](#nodered-dashboard)
+ - [Demonstracioni video](#demonstracioni-video)
  - [Korisni linkovi](#korisni-linkovi)
 
 ## Datasheet-ovi
